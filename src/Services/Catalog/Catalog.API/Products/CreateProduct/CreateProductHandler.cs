@@ -1,6 +1,8 @@
 ﻿
 
 
+using Microsoft.Extensions.Logging.Configuration;
+
 namespace Catalog.API.Products.CreateProduct
 {
     public record CreateProductCommand(string Name, List<string> Category, string Description, string ImageFile, decimal Price)
@@ -18,7 +20,7 @@ namespace Catalog.API.Products.CreateProduct
         }
     }
 
-    internal class CreateProductCommandHandler(IDocumentSession session, IValidator<CreateProductCommand> validator) 
+    internal class CreateProductCommandHandler(IDocumentSession session, ILogger<CreateProductCommandHandler> logger) 
         : ICommandHandler<CreateProductCommand, CreateProductResult>
     {
         public async Task<CreateProductResult> Handle(CreateProductCommand command, CancellationToken cancellationToken)
@@ -27,12 +29,7 @@ namespace Catalog.API.Products.CreateProduct
 
             // Create Product entity from command object
 
-            var result = await validator.ValidateAsync(command, cancellationToken); 
-            var errors = result.Errors.Select(x => x.ErrorMessage).ToList();
-            if (errors.Any())
-            {
-                throw new ValidationException(errors.FirstOrDefault());
-            }
+            logger.LogInformation("CreateProductCommandHandler.Handle vall with {@Command}", command);
 
             var product = new Product
             {
