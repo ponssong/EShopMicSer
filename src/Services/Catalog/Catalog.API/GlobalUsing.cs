@@ -9,3 +9,4 @@ global using FluentValidation;
 global using BuildingBlock.Behaviors;
 global using BuildingBlock.Exceptions.Handler;
 global using Catalog.API.Data;
+global using Marten.Pagination;
