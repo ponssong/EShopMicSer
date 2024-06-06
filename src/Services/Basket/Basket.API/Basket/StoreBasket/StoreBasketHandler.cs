@@ -1,4 +1,4 @@
-﻿using FluentValidation;
+﻿
 
 namespace Basket.API.Basket.StoreBasket
 {
@@ -22,8 +22,8 @@ namespace Basket.API.Basket.StoreBasket
         {
             ShoppingCart cart = command.Cart;
 
-            //TODO: store basket in database (use Marten upsert - if exist = update
-            //TODO: update cashe
+            //TODO: store basket in database (use Marten upsert - if exist = update, if not insert
+            //TODO: update cache
 
             return new StoreBasketResult("swn");
             
