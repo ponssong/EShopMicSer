@@ -10,13 +10,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Protos\Discount.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.63.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Protos\" />
     <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\Discount.proto" GrpcServices="Server" />
   </ItemGroup>
 
 </Project>
