@@ -7,7 +7,7 @@ using System.Windows.Input;
 
 namespace BuildingBlock.Behaviors
 {
-    public class ValidationBehaviorM<TRequest, TResponse>
+    public class ValidationBehavior<TRequest, TResponse>
         (IEnumerable<IValidator<TRequest>> validators)
         : IPipelineBehavior<TRequest, TResponse>
         where TRequest : ICommand<TResponse>
