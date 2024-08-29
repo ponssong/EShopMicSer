@@ -1,6 +1,6 @@
 # EShopMicSer
 
-Catalog microservice which includes;
+# Catalog microservice which includes;
 
 ASP.NET Core Minimal APIs and latest features of .NET 8 and C# 12
 
@@ -20,7 +20,7 @@ Dockerfile and docker-compose file for running Multi-container in Docker environ
 
 
 
-Basket microservice which includes;
+# Basket microservice which includes;
 
 ASP.NET 8 Web API application, Following REST API principles, CRUD operations
 
@@ -34,7 +34,7 @@ Publish BasketCheckout Queue with using MassTransit and RabbitMQ
 
 
 
-Discount microservice which includes;
+# Discount microservice which includes;
 
 ASP.NET gRPC Server application
 
@@ -48,7 +48,7 @@ SQLite database connection and containerization
 
 
 
-Microservices Communication
+# Microservices Communication
 
 Sync inter-service gRPC Communication
 
@@ -64,7 +64,7 @@ Create RabbitMQ EventBus.Messages library and add references Microservices
 
 
 
-Ordering Microservice
+# Ordering Microservice
 
 Implementing DDD, CQRS, and Clean Architecture with using Best Practices
 
@@ -82,7 +82,7 @@ Using Entity Framework Core ORM and auto migrate to SqlServer when application s
 
 
 
-Yarp API Gateway Microservice
+# Yarp API Gateway Microservice
 
 Implement API Gateways with Yarp Reverse Proxy applying Gateway Routing Pattern
 
@@ -94,7 +94,7 @@ Sample microservices/containers to reroute through the API Gateways
 
 
 
-WebUI ShoppingApp Microservice
+# WebUI ShoppingApp Microservice
 
 ASP.NET Core Web Application with Bootstrap 4 and Razor template
 
