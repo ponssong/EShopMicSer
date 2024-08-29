@@ -18,6 +18,8 @@ Cross-cutting concerns Logging, global Exception Handling and Health Checks
 
 Dockerfile and docker-compose file for running Multi-container in Docker environment
 
+
+
 Basket microservice which includes;
 
 ASP.NET 8 Web API application, Following REST API principles, CRUD operations
@@ -30,6 +32,8 @@ Consume Discount gRPC Service for inter-service sync communication to calculate 
 
 Publish BasketCheckout Queue with using MassTransit and RabbitMQ
 
+
+
 Discount microservice which includes;
 
 ASP.NET gRPC Server application
@@ -41,6 +45,8 @@ Exposing gRPC Services with creating Protobuf messages
 Entity Framework Core ORM - SQLite Data Provider and Migrations
 
 SQLite database connection and containerization
+
+
 
 Microservices Communication
 
@@ -55,6 +61,8 @@ Using MassTransit for abstraction over RabbitMQ Message-Broker system
 Publishing BasketCheckout event queue from Basket microservices and Subscribing this event from Ordering microservices
 
 Create RabbitMQ EventBus.Messages library and add references Microservices
+
+
 
 Ordering Microservice
 
@@ -72,6 +80,8 @@ SqlServer database connection and containerization
 
 Using Entity Framework Core ORM and auto migrate to SqlServer when application startup
 
+
+
 Yarp API Gateway Microservice
 
 Implement API Gateways with Yarp Reverse Proxy applying Gateway Routing Pattern
@@ -81,6 +91,8 @@ Yarp Reverse Proxy Configuration; Route, Cluster, Path, Transform, Destinations
 Rate Limiting with FixedWindowLimiter on Yarp Reverse Proxy Configuration
 
 Sample microservices/containers to reroute through the API Gateways
+
+
 
 WebUI ShoppingApp Microservice
 
