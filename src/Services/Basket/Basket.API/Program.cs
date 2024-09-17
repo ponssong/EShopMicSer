@@ -1,5 +1,6 @@
 
 
+using BuildingBlock.Behaviors;
 using BuildingBlock.Exceptions.Handler;
 using Discount.Grpc;
 using HealthChecks.UI.Client;
@@ -16,7 +17,7 @@ builder.Services.AddCarter();
 builder.Services.AddMediatR(config =>
 {
     config.RegisterServicesFromAssembly(assembly);
-    config.AddOpenBehavior(typeof(ValidationBehaviorM<,>));
+    config.AddOpenBehavior(typeof(ValidationBehavior<,>));
     config.AddOpenBehavior(typeof(LoggingBehavior<,>));
 });
 
