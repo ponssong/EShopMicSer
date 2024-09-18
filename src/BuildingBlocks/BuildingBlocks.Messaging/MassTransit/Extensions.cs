@@ -10,7 +10,7 @@ public static class Extensions
     public static IServiceCollection AddMessageBroker
        (this IServiceCollection services, IConfiguration configuration, Assembly? assembly = null)
     {
-        /*services.AddMassTransit(config =>
+        services.AddMassTransit(config =>
         {
             config.SetKebabCaseEndpointNameFormatter();
 
@@ -26,7 +26,7 @@ public static class Extensions
                 });
                 configurator.ConfigureEndpoints(context);
             });
-        });*/
+        });
 
         return services;
     }
